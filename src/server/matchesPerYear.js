@@ -3,7 +3,7 @@
 
 //const fs = require("fs");
 
-//const matchesJsonString = fs.readFileSync("../../matches.json", "utf-8"); // requireing and converting when needed
+//const matchesJsonString = fs.readFileSync("../../matches.json", "ut;f-8") // requireing and converting when needed
 
 //const matches = JSON.parse(matchesJsonString);
 
