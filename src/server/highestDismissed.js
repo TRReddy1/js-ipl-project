@@ -24,7 +24,7 @@ function highestDismissed(deliveries) {
   Object.keys(bowlers).forEach((bowler) => {
     const entries = Object.entries(bowlers[bowler]);
     if (entries.length > 0) {
-      entries.sort(([, a], [, b]) => b - a);
+      entries.sort((a, b) => b[1] - a[1]);
       const topDismissed = entries[0][0];
       answer[bowler] = {
         batsmen: topDismissed,
