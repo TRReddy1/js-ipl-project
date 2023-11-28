@@ -3,7 +3,9 @@ const matchesPerSeason = require("../matchesPerYear");
 
 const result = matchesPerSeason(matches);
 
-//console.log(result);
+console.log(result);
+
+module.exports = result;
 
 // printing output
 
