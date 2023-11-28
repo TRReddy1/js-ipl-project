@@ -1,6 +1,9 @@
 //**_6.Find a player who has won the highest number of Player of the Match awards for each season _**
 
 function playerOfMatch(matches) {
+  if (Object.keys(matches).length === 0) {
+    return {};
+  }
   const players = matches.reduce((accu, curr) => {
     let season = curr["season"];
     let player = curr["player_of_match"];
@@ -27,15 +30,6 @@ function playerOfMatch(matches) {
     const topPlayer = entries[0][0];
     result[season] = { player: topPlayer, award: players[season][topPlayer] };
   });
-
-  //   const result = {};
-  //   Object.keys(players).forEach((season) => {
-  //     const topPlayer = Object.keys(players[season]).reduce(
-  //       (a, b) => (players[season][a] > players[season][b] ? a : b),
-  //       ""
-  //     );
-  //     result[season] = { player: topPlayer, awards: players[season][topPlayer] };
-  //   });
 
   return result;
 }

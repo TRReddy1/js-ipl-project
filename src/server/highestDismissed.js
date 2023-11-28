@@ -2,6 +2,11 @@
 
 function highestDismissed(deliveries) {
   // generating all bolwers and batmens and thier count
+
+  if (Object.keys(deliveries).length === 0) {
+    return {};
+  }
+
   const bowlers = deliveries.reduce((accu, curr) => {
     let bowler = curr["bowler"];
     let batsmen = curr["player_dismissed"];

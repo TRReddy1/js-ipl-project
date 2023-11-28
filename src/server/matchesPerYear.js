@@ -10,6 +10,10 @@
 //console.log(matches[0].season); // Access the first element of the parsed JSON object
 
 function matchesPerSeason(matches) {
+  //for testing jest
+  if (matches === null || Object.keys(matches).length === 0) {
+    return {};
+  }
   // generate years from inventory
   const years = matches.map((match) => {
     return match.season;
