@@ -1,7 +1,7 @@
 {
   "name": "jsiplproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this data assignment you will transform raw data of IPL to calculate the following stats:",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage"

@@ -10,6 +10,6 @@ In this data assignment you will transform raw data of IPL to calculate the foll
 **_6.Find a player who has won the highest number of Player of the Match awards for each season _** \
 **_7.Find the strike rate of a batsman for each season _** \
 **_8.Find the highest number of times one player has been dismissed by another player _** \
-**_9.Find the bowler with the best economy in super overs _** \
+**_9.Find the bowler with the best economy in super overs _**
 
 Implement the functions, one for each task. Use the results of the functions to dump JSON files in the output folder
